@@ -1,7 +1,7 @@
 FROM r-base:3.6.3
 MAINTAINER wuhanstudio 
 
-RUN apt-get update && apt-get install git
+RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/wuhanstudio/bibliometrix
 RUN tar -cvzf bibliometrix.tar.gz bibliometrix
 
