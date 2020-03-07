@@ -1,0 +1,3 @@
+[submodule "bibliometrix"]
+	path = bibliometrix
+	url = https://github.com/massimoaria/bibliometrix
