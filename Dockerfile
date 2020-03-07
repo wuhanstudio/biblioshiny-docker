@@ -7,6 +7,7 @@ COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 
 RUN git clone https://github.com/wuhanstudio/bibliometrix
+RUN rm -rf /usr/local/src/myscripts/bibliometrix/.git
 RUN zip -r bibliometrix.zip /usr/local/src/myscripts/bibliometrix
 
 RUN Rscript biblioshiny-install.R 
