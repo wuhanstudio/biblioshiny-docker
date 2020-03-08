@@ -9,6 +9,6 @@ WORKDIR /usr/local/src/myscripts
 RUN Rscript biblioshiny-install.R
 RUN Rscript biblioshiny-devtool.R
 
-
+EXPOSE 8080
 CMD ["Rscript", "biblioshiny-start.R"]
 
