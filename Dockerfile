@@ -6,8 +6,9 @@ RUN apt-get update && apt-get install -y build-essential libcurl4-gnutls-dev lib
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 
-# RUN R CMD INSTALL -l /usr/local/lib/R/site-library/ bibliometrix.zip
 RUN Rscript biblioshiny-install.R
+RUN Rscript biblioshiny-devtool.R
+
 
 CMD ["Rscript", "biblioshiny-start.R"]
 
