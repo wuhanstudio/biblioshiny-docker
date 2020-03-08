@@ -1,3 +1,3 @@
 library("bibliometrix")
-biblioshiny(port=8080, launch.browser=FALSE)
+biblioshiny(host="0.0.0.0", port=8080, launch.browser=FALSE)
 
